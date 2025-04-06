@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Clone with Bootstrap 5.3.3</title>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #2c2c2c;
+        }
+        .navbar-brand {
+            color: #00c4b4 !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: white !important;
+        }
+        .hero-section {
+            background: url('Airport.jpeg') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            position: relative;
+            color: white;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-text {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            color: black;
+            max-width: 500px;
+        }
+        .hero-text h1 {
+            font-size: 2rem;
+        }
+        .btn-teal {
+            background-color: #00c4b4;
+            border: none;
+            color: white;
+        }
+        .btn-teal:hover {
+            background-color: #00a89a;
+        }
+        .service-card {
+            border: none;
+            text-align: center;
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .project-section {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-section {
+            padding: 40px 0;
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .client-section {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .client-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO HERE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1>LOREM IPSUM IS SIMPLY DUMMY</h1>
+                <p>Lorem ipsum has been the industry's standard...</p>
+                <button class="btn btn-teal">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card service-card">
+                    <img src="service1.jpg" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">LOREM IPSUM</h5>
+                        <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        <a href="#" class="btn btn-teal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card service-card">
+                    <img src="service2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">LOREM IPSUM</h5>
+                        <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        <a href="#" class="btn btn-teal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card service-card">
+                    <img src="service3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">LOREM IPSUM</h5>
+                        <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        <a href="#" class="btn btn-teal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card service-card">
+                    <img src="service4.jpg" class="card-img-top" alt="Service 4">
+                    <div class="card-body">
+                        <h5 class="card-title">LOREM IPSUM</h5>
+                        <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        <a href="#" class="btn btn-teal">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Projects Section -->
+    <section class="project-section">
+        <h2 class="section-title">LATEST PROJECTS</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card project-card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card project-card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card project-card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">LOREM IPSUM</h5>
+                            <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card project-card">
+                        <img src="project4.jpg" class="card-img-top" alt="Project 4">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-teal">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-section">
+        <h2 class="section-title">BLOG POSTS</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card blog-card">
+                        <img src="project1.jpg" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <p class="text-muted">22 JULY</p>
+                            <h5 class="card-title">LOREM IPSUM</h5>
+                            <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card blog-card">
+                        <img src="project2.jpg" class="card-img-top" alt="Blog 2">
+                        <div class="card-body">
+                            <p class="text-muted">24 JULY</p>
+                            <h5 class="card-title">LOREM IPSUM</h5>
+                            <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card blog-card">
+                        <img src="project3.jpg" class="card-img-top" alt="Blog 3">
+                        <div class="card-body">
+                            <p class="text-muted">21 AUG</p>
+                            <h5 class="card-title">LOREM IPSUM</h5>
+                            <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card blog-card">
+                        <img src="project4.jpg" class="card-img-top" alt="Blog 4">
+                        <div class="card-body">
+                            <p class="text-muted">11 OCT</p>
+                            <h5 class="card-title">LOREM IPSUM</h5>
+                            <p class="card-text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Opinion Section -->
+    <section class="client-section">
+        <h2 class="section-title">CLIENT OPINION</h2>
+        <div class="container">
+            <img src="client.jpg" alt="Client">
+            <h3>LOREM IPSUM IS SIMPLY DUMMY</h3>
+            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem ipsum.</p>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <a class="navbar-brand" href="#">LOGO HERE</a>
+                </div>
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Your e-mail">
+                        <button class="btn btn-teal" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-3 text-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-google"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2017 Company Name. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Design by <a href="#">freepsddesign</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
